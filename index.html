@@ -6,7 +6,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	
 	<title>Yuriy Bogatyrev Portfolio</title>
-	<meta content="" name="description">
+	<meta content="Yuriy Bogatyrev - Fullstack software developer" name="description">
 	<meta content="" name="keywords">
 	
 	<link href="img/favicon.png" rel="icon">
@@ -29,18 +29,18 @@
 	<section class="section site-portfolio">
 		<div class="container">
 			<div class="row mb-5 align-items-center">
-				<div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+				<div class="col-md-12 col-lg-5 mb-4 mb-lg-0" data-aos="fade-up">
 					<h2>Hello, I'm Yuriy Bogatyrev</h2>
 					<p class="mb-0">Fullstack Software developer</p>
 				</div>
-				<div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-md-12 col-lg-7 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
 					<div id="filters" class="filters">
-						<a href="#" data-filter="*" class="active">All(38)</a>
-						<a href="#" data-filter=".web">Web(10)</a>
-						<a href="#" data-filter=".android">Android(16)</a>
-						<a href="#" data-filter=".games">Games(8)</a>
-						<a href="#" data-filter=".desktop">Desktop(4)</a>
-						<a href="#" data-filter=".skill">Skills</a>
+						<a href="#" data-filter="*" class="active" id="filter_all">All <span></span> </a>
+						<a href="#" data-filter=".web" id="filter_web">Web <span></span> </a>
+						<a href="#" data-filter=".android" id="filter_android">Android <span></span> </a>
+						<a href="#" data-filter=".games" id="filter_games">Games <span></span> </a>
+						<a href="#" data-filter=".desktop" id="filter_desktop">Desktop <span></span> </a>
+						<a href="#" data-filter=".skill" id="filter_skills">Skills</a>
 					</div>
 				</div>
 			</div>
@@ -486,16 +486,7 @@
 					</div>
 				</div>
 
-
-
-
-
-
-
-
-
-
-
+				
 				
 				<div class="item web col-sm-6 col-md-3 col-lg-3 mb-4">
 					<div class="item-wrap fancybox">
@@ -628,7 +619,7 @@
 						<img class="img-fluid img_main" src="img/music2.png">
 					</div>
 					<div class="d-sm-none text-center">
-						<h3>-bit music processor</h3>
+						<h3>1-bit music processor</h3>
 						<p>HTML, CSS, JS</p>
 						<a class="read_more" data-bs-toggle="modal" data-bs-target="#modal_music"> Read more </a>
 					</div>
@@ -720,6 +711,23 @@
 						<a class="read_more" data-bs-toggle="modal" data-bs-target="#modal_my_money"> Read more </a>
 					</div>
 				</div>
+				
+				<div class="item web col-sm-6 col-md-3 col-lg-3 mb-4">
+					<div class="item-wrap fancybox">
+						<div class="work-info">
+							<h3>Cryptograph</h3>
+							<span>Web</span>
+							<p>HTML, CSS, JS, Vue</p>
+							<a class="read_more" data-bs-toggle="modal" data-bs-target="#modal_cryptograph"> Read more </a>
+						</div>
+						<img class="img-fluid img_main" src="img/cryptograph_1.png">
+					</div>
+					<div class="d-sm-none text-center">
+						<h3>Cryptograph</h3>
+						<p>HTML, CSS, JS, Vue</p>
+						<a class="read_more" data-bs-toggle="modal" data-bs-target="#modal_cryptograph"> Read more </a>
+					</div>
+				</div>
 			
 			</div>
 		</div>
@@ -746,10 +754,12 @@
 					<ul class="list-unstyled list-line">
 						<li>HTML5</li>
 						<li>CSS3</li>
+						<li>Flexbox</li>
 						<li>Bootstrap</li>
 						<li>Javascript</li>
 						<li>Jquery</li>
 						<li>Vue.js</li>
+						<li>Responsive Design & Mobile-First</li>
 					</ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-4">
@@ -760,9 +770,12 @@
 					<p class="mb-4 text-center">Logic, API functions, data storage, databases</p>
 					<ul class="list-unstyled list-line">
 						<li>PHP</li>
-						<!-- <li>Laravel</li> -->
+						<li>AJAX</li>
+						 <li>Laravel</li>
 						<li>Node.js</li>
 						<li>mySQL</li>
+						<li>third-party APIs</li>
+						<li>XML, JSON</li>
 					</ul>
 				</div>
 				
@@ -816,9 +829,11 @@
 					</div>
 					<p class="mb-4 text-center">Perhaps these skills will be useful too</p>
 					<ul class="list-unstyled list-line">
+						<li>Git</li>
 						<li>SEO</li>
-						<li>Graphic design (icons and other)</li>
-						<li>Linux administration</li>
+						<li>iOS/Swift</li>
+						<li>Photoshop (icons and other)</li>
+						<li>Linux</li>
 						<li>Apache, nginx</li>
 					</ul>
 				</div>
@@ -837,7 +852,8 @@
 							<div class="testimonial">
 								<img src="img/avatar.png" alt="Image" class="img-fluid">
 								
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.</p>
+								<p>Interested and creative software developer.</p>
+								<p>Experience in development since 2012.</p>
 							
 							</div>
 						</div>
@@ -869,7 +885,7 @@
 						<p class="modal_languages">C#, Unity3D</p>
 						
 						<p>My tribute to the Fantastic adventures of Dizzy NES game by Oliver Twins. I took original graphics, made it more varicolored, added seasons and weather effects like snow and falling leaves, and created absolutely new locations.</p>
-						<p>Same as in the original, you can find, pick up and carry 3 items at once, and apply them in the right place.</p>
+						<p>Same as in the original, you can find, pick up and carry 3 items at once, and apply them to the right places.</p>
 						<p>Not released yet, work in progress</p>
 					</div>
 				</div>
@@ -1065,7 +1081,7 @@
 					
 					<div class="modal_text col-12 mt-5">
 						<p class="modal_languages">C#, WinForms, Visual Studio, SQL</p>
-						<p>Helper application. It is parser for vk.com site. Here I can set range of people ids, and app will be saving some information by VK API to my SQL database. Also it displays some technical information like progress, speed of working and approximately remaining time.</p>
+						<p>Helper application. It is parser for vk.com site. Here I can set range of people ids, and app will be saving some information by VK API to my SQL database. Also it displays some technical information like progress, speed and approximately remaining time.</p>
 					</div>
 				</div>
 			</div>
@@ -1259,10 +1275,10 @@
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-12 d-flex justify-content-center">
-						<img src="img/bot_1.PNG" alt="ChatBot" class="img-fluid">
+						<img src="img/bot_1.png" alt="ChatBot" class="img-fluid">
 					</div>
 					<div class="col-12 d-flex justify-content-center mt-3">
-						<img src="img/bot_2.PNG" alt="ChatBot" class="img-fluid">
+						<img src="img/bot_2.png" alt="ChatBot" class="img-fluid">
 					</div>
 
 					<div class="modal_text col-12 mt-5">
@@ -1296,7 +1312,7 @@
 					
 					<div class="modal_text col-12 mt-5">
 						<p class="modal_languages">HTML, CSS, JS, Vue.js</p>
-						<p>expense tracker application. You can add any amount of accounts. Then you can add payments, select category or create your own new category, and add tag if it is necessary. </p>
+						<p>Expense tracker application. You can add any amount of accounts. Then you can add payments, select category or create your own new category, and add tag if it is necessary. </p>
 						<p>You can see 3 types of statatistics : by categories, by tags and by months.</p>
 						<p>There are registration and synchronization functions, server was also made by me.</p>
 						<p>You can choose theme from 12 different colors, switch between light and dark mode. </p>
@@ -1314,7 +1330,7 @@
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">ChatBot</h5>
+				<h5 class="modal-title">Cloud</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
@@ -1385,6 +1401,34 @@
 	</div>
 </div>
 
+
+<div class="modal fade" id="modal_cryptograph" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Cryptograph</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-center">
+						<img src="img/cryptograph_1.png" alt="Cloud" class="img-fluid">
+					</div>
+					<div class="col-12 d-flex justify-content-center mt-3">
+						<img src="img/cryptograph_2.png" alt="Cloud" class="img-fluid">
+					</div>
+					
+					<div class="modal_text col-12 mt-5">
+						<p class="modal_languages">HTML, CSS, JS, Vue</p>
+						<p>A simple algorithm for encrypting messages. The key length is 64 bits, the encrypted message is the same length as the original. In an encrypted message, just the correct letters and symbols are replaced with other random ones, and the key will help to replace them with the correct ones</p>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
 <!--======================================== FOOTER  ==========================================-->
 
 <footer class="footer" role="contentinfo">
@@ -1402,8 +1446,9 @@
 				<a href="https://www.youtube.com/channel/UCbj4Q3yZQC3GwOYpZvBtlhg/videos" target="_blank" title="Youtube"><span class="bi bi-youtube"></span></a>
 				<a href="https://t.me/web_yu" target="_blank" title="Telegram"><span class="bi bi-telegram"></span></a>
 				<!--<a href="#" target="_blank"><span class="bi bi-facebook"></span></a>
-				<a href="#" target="_blank"><span class="bi bi-instagram"></span></a> -->
-				<a href="#" target="_blank"><span class="bi bi-linkedin"></span></a>
+				 -->
+				<a href="#" target="_blank" title="Github"><span class="bi bi-github"></span></a>
+				<a href="#" target="_blank" title="LinkedIn"><span class="bi bi-linkedin"></span></a>
 			
 			</div>
 		</div>
@@ -1417,6 +1462,46 @@
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        count_projects();
+        
+    });
+    
+    function count_projects(){
+        let android_count = 0;
+        let web_count = 0;
+        let games_count = 0;
+        let desktop_count = 0;
+        let all_count = 0;
+        
+        $('.item').each(function() {
+            if($(this).hasClass('android')){
+               android_count++;
+			}
+            else if($(this).hasClass('web')){
+                web_count++;
+			}
+            else if($(this).hasClass('games')){
+                games_count++;
+            }
+            else if($(this).hasClass('desktop')){
+                desktop_count++;
+            }
+           
+        });
+
+        all_count = android_count + web_count + games_count + desktop_count;
+		
+        $('#filter_android').find('span').html( '(' + android_count + ')' );
+        $('#filter_web').find('span').html( '(' + web_count + ')' );
+        $('#filter_desktop').find('span').html( '(' + desktop_count + ')' );
+        $('#filter_games').find('span').html( '(' + games_count + ')' );
+        $('#filter_all').find('span').html( '(' + all_count + ')' );
+    }
+</script>
 
 </body>
 
